@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detail produk kesehatan MedCare. Lihat informasi lengkap, dosis, dan peringatan penggunaan obat.">
+    <title>Detail Produk — MedCare</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- ===================== NAVIGASI ===================== -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="index.html" class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="#1677C8"/>
+                    <path d="M16 8v16M8 16h16" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                MedCare
+            </a>
+
+            <!-- Menu Navigasi -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="products.html" class="nav-link active">Katalog Obat</a></li>
+                <li><a href="symptom-checker.html" class="nav-link">Deteksi Gejala</a></li>
+                <li><a href="health-information.html" class="nav-link">Informasi Kesehatan</a></li>
+                <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+                <li><a href="contact.html" class="nav-link">Hubungi Kami</a></li>
+            </ul>
+
+            <!-- Ikon Keranjang -->
+            <a href="cart.html" class="nav-cart" aria-label="Keranjang Belanja">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                <span class="cart-badge" id="cart-count">0</span>
+            </a>
+
+            <!-- Tombol Hamburger untuk Mobile -->
+            <button class="hamburger" id="hamburger" aria-label="Menu navigasi">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== KONTEN UTAMA ===================== -->
+    <main>
+        <section class="section">
+            <div class="container">
+                <!-- Tombol Kembali -->
+                <a href="products.html" class="btn btn-outline back-btn">
+                    ← Kembali ke Katalog
+                </a>
+
+                <!-- Kontainer Detail Produk (diisi oleh JavaScript) -->
+                <div id="product-detail" class="product-detail">
+                    <!--
+                        JavaScript akan me-render:
+                        - Gambar produk (emoji besar)
+                        - Info produk: nama, badge kategori, harga, deskripsi
+                        - Status stok
+                        - Peringatan resep dokter jika berlaku
+                        - Informasi penggunaan
+                        - Peringatan
+                        - Tombol Tambah ke Keranjang
+                        - Tombol Favorit
+                    -->
+                </div>
+
+                <!-- State Error (ditampilkan jika produk tidak ditemukan) -->
+                <div id="product-not-found" class="empty-state hidden">
+                    <div class="empty-state-icon">😕</div>
+                    <h3>Produk Tidak Ditemukan</h3>
+                    <p>Maaf, produk yang Anda cari tidak tersedia dalam katalog kami.</p>
+                    <a href="products.html" class="btn btn-primary">Kembali ke Katalog</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Tentang MedCare -->
+                <div class="footer-section">
+                    <h3>MedCare</h3>
+                    <p>Teman Sehat Anda, Setiap Hari. MedCare adalah prototipe website apotek online yang dikembangkan untuk proyek akademik.</p>
+                </div>
+
+                <!-- Link Navigasi -->
+                <div class="footer-section">
+                    <h3>Navigasi</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="products.html">Katalog Obat</a></li>
+                        <li><a href="symptom-checker.html">Deteksi Gejala</a></li>
+                        <li><a href="health-information.html">Informasi Kesehatan</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="contact.html">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kontak Demo -->
+                <div class="footer-section">
+                    <p>📧 ahmad.faiz49597@admin.smk.belajar.id</p>
+                    <p>📞 0813-1489-4290</p>
+                    <p>📍 Bogor, Indonesia</p>
+                </div>
+
+                <!-- Disclaimer -->
+                <div class="footer-section">
+                    <h3>Disclaimer</h3>
+                    <p>Website ini adalah proyek akademik dan tidak menjual obat secara nyata. Selalu konsultasikan kebutuhan kesehatan Anda dengan tenaga medis profesional.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MedCare — Tugas UTS. Tidak untuk penggunaan komersial.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== JAVASCRIPT ===================== -->
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/favorites.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

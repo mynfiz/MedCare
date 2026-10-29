@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informasi dan artikel kesehatan pernapasan MedCare. Panduan edukatif mengenali gejala, pencegahan infeksi, dan gaya hidup sehat.">
+    <title>Informasi Kesehatan — MedCare</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- ===================== NAVIGASI ===================== -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="index.html" class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect width="32" height="32" rx="8" fill="#1677C8"/>
+                    <path d="M16 8v16M8 16h16" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                MedCare
+            </a>
+
+            <!-- Menu Navigasi -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="products.html" class="nav-link">Katalog Obat</a></li>
+                <li><a href="symptom-checker.html" class="nav-link">Deteksi Gejala</a></li>
+                <li><a href="health-information.html" class="nav-link active">Informasi Kesehatan</a></li>
+                <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+                <li><a href="contact.html" class="nav-link">Hubungi Kami</a></li>
+            </ul>
+
+            <!-- Ikon Keranjang -->
+            <a href="cart.html" class="nav-cart" aria-label="Keranjang Belanja">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="9" cy="21" r="1"/>
+                    <circle cx="20" cy="21" r="1"/>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                </svg>
+                <span class="cart-badge" id="cart-count">0</span>
+            </a>
+
+            <!-- Tombol Hamburger untuk Mobile -->
+            <button class="hamburger" id="hamburger" aria-label="Menu navigasi">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== KONTEN UTAMA ===================== -->
+    <main>
+        <!-- Header Halaman -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Pusat Informasi Kesehatan</h1>
+                <p>Panduan edukatif terpercaya seputar kesehatan saluran pernapasan, pencegahan penyakit, dan tips hidup sehat</p>
+            </div>
+        </section>
+
+        <!-- Bagian Artikel Edukasi -->
+        <section class="section">
+            <div class="container">
+                <!-- Penafian Edukasi -->
+                <div class="info-disclaimer-box mb-4">
+                    <div class="info-icon" aria-hidden="true">💡</div>
+                    <div class="info-text">
+                        <strong>Catatan Edukatif MedCare:</strong> Artikel di bawah ini disusun semata-mata untuk tujuan literasi dan wawasan kesehatan umum bagi masyarakat. Informasi ini tidak dimaksudkan sebagai pengganti diagnosis, perawatan, atau anjuran medis langsung dari dokter berwenang.
+                    </div>
+                </div>
+
+                <!-- Grid Artikel Kesehatan -->
+                <div class="articles-container">
+                    <!-- Artikel 1 -->
+                    <article class="article-full-card" id="article-1">
+                        <div class="article-header-row">
+                            <span class="article-badge">Panduan Klinis Ringkas</span>
+                            <span class="article-date">📅 Edukasi MedCare</span>
+                        </div>
+                        <div class="article-media-icon" aria-hidden="true">🤧</div>
+                        <h2 class="article-title">Mengenali Perbedaan Flu Biasa, Influenza, dan Rinitis Alergi</h2>
+                        <p class="article-lead">Meskipun sama-sama menyebabkan bersin dan hidung tersumbat, ketiga kondisi ini memiliki penyebab mendasar dan cara penanganan yang berbeda.</p>
+
+                        <div class="article-body">
+                            <h3>1. Flu Biasa (Common Cold)</h3>
+                            <p>Flu biasa umumnya disebabkan oleh infeksi <em>Rhinovirus</em>. Gejala berkembang perlahan dalam 1–3 hari, ditandai dengan hidung meler, bersin, tenggorokan gatal, dan batuk ringan. Suhu tubuh biasanya normal atau hanya demam ringan. Kebanyakan penderita dapat pulih total dalam 7–10 hari dengan istirahat cukup.</p>
+
+                            <h3>2. Influenza (Flu Akut)</h3>
+                            <p>Influenza dipicu oleh virus influenza (tipe A atau B). Karakteristik khasnya adalah timbulnya gejala secara mendadak disertai demam tinggi (seringkali >38.5°C), sakit kepala hebat, nyeri otot sekujur tubuh (myalgia), dan rasa lemas ekstrem. Flu ini memerlukan istirahat tirah baring dan asupan nutrisi yang kuat.</p>
+
+                            <h3>3. Rinitis Alergi</h3>
+                            <p>Berbeda dari flu, rinitis alergi bukan disebabkan oleh infeksi mikroorganisme, melainkan reaksi sistem kekebalan tubuh terhadap zat asing yang sebenarnya tidak berbahaya (alergen) seperti debu rumah, serbuk sari, bulu kucing, atau udara dingin. Gejalanya mencakup bersin berkali-kali tanpa disertai demam, hidung berair bening, dan mata berair atau gatal.</p>
+                        </div>
+
+                        <div class="article-footer-note">
+                            📌 <strong>Tips MedCare:</strong> Mencatat waktu kemunculan gejala membantu dokter menentukan apakah keluhan Anda merupakan infeksi virus musiman atau reaksi alergi kronis.
+                        </div>
+                    </article>
+
+                    <!-- Artikel 2 -->
+                    <article class="article-full-card" id="article-2">
+                        <div class="article-header-row">
+                            <span class="article-badge">Pencegahan &amp; Gaya Hidup</span>
+                            <span class="article-date">📅 Edukasi MedCare</span>
+                        </div>
+                        <div class="article-media-icon" aria-hidden="true">🫁</div>
+                        <h2 class="article-title">7 Cara Efektif Menjaga Kesehatan Saluran Pernapasan dan Paru-Paru</h2>
+                        <p class="article-lead">Paru-paru bekerja tanpa henti setiap detik memasok oksigen ke seluruh sel tubuh. Lindungi kesehatannya dengan langkah-langkah protektif sederhana.</p>
+
+                        <div class="article-body">
+                            <ul class="article-checklist">
+                                <li>
+                                    <strong>Hindari Paparan Asap Rokok &amp; Vape:</strong> Baik perokok aktif maupun pasif berisiko mengalami kerusakan silia (rambut halus pembersih lendir di saluran napas), meningkatkan kerentanan bronkitis kronis.
+                                </li>
+                                <li>
+                                    <strong>Gunakan Masker Saat Berada di Udara Berpolusi:</strong> Masker standar medis atau respirator membantu menyaring partikel debu mikro (PM2.5) dari asap kendaraan dan industri.
+                                </li>
+                                <li>
+                                    <strong>Jaga Ventilasi Udara Rumah Tetap Baik:</strong> Buka jendela di pagi hari agar terjadi pertukaran udara segar dan mencegah akumulasi jamur dinding akibat kelembapan berlebih.
+                                </li>
+                                <li>
+                                    <strong>Rutin Minum Air Putih Cukup:</strong> Hidrasi yang baik menjaga lapisan mukosa saluran pernapasan tetap basah dan encer, mempermudah pengeluaran partikel asing.
+                                </li>
+                                <li>
+                                    <strong>Lakukan Olahraga Aerobik Teratur:</strong> Jalan cepat, bersepeda santai, atau berenang membantu melatih kapasitas vital paru-paru dan otot diafragma.
+                                </li>
+                                <li>
+                                    <strong>Cuci Tangan dengan Sabun Sebelum Menyentuh Wajah:</strong> Virus saluran pernapasan seringkali berpindah dari permukaan benda mati ke selaput lendir hidung dan mulut melalui jari tangan.
+                                </li>
+                                <li>
+                                    <strong>Dapatkan Vaksinasi Sesuai Anjuran:</strong> Vaksin influenza tahunan dapat memberikan perlindungan signifikan terutama bagi kelompok berisiko tinggi.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="article-footer-note">
+                            📌 <strong>Tips MedCare:</strong> Olahraga ringan selama 20–30 menit per hari telah terbukti memperkuat sistem kekebalan tubuh saluran pernapasan.
+                        </div>
+                    </article>
+
+                    <!-- Artikel 3 -->
+                    <article class="article-full-card" id="article-3">
+                        <div class="article-header-row">
+                            <span class="article-badge">Keselamatan Pasien</span>
+                            <span class="article-date">📅 Edukasi MedCare</span>
+                        </div>
+                        <div class="article-media-icon" aria-hidden="true">🚨</div>
+                        <h2 class="article-title">Tanda Bahaya (Red Flags): Kapan Harus Segera Mencari Pertolongan Medis?</h2>
+                        <p class="article-lead">Meskipun sebagian besar batuk dan pilek dapat sembuh mandiri, terdapat tanda bahaya yang menandakan kondisi gawat darurat yang tidak boleh ditunda.</p>
+
+                        <div class="article-body">
+                            <h3>Segera Menuju Instalasi Gawat Darurat (IGD) Jika Mengalami:</h3>
+                            <div class="danger-signs-grid">
+                                <div class="danger-box">
+                                    <span class="danger-icon">⚠️</span>
+                                    <h4>Sesak Napas Parah</h4>
+                                    <p>Napas cuping hidung, dada terlihat tertarik ke dalam (retraksi), atau napas terengah-engah hingga tidak mampu mengucapkan satu kalimat utuh.</p>
+                                </div>
+                                <div class="danger-box">
+                                    <span class="danger-icon">⚠️</span>
+                                    <h4>Sianosis (Kebiruan)</h4>
+                                    <p>Bibir, lidah, ujung kuku, atau wajah tampak pucat kebiruan/keabu-abuan, menandakan kadar saturasi oksigen darah sangat rendah.</p>
+                                </div>
+                                <div class="danger-box">
+                                    <span class="danger-icon">⚠️</span>
+                                    <h4>Nyeri Dada Hebat</h4>
+                                    <p>Rasa sesak tertekan di dada yang terus-menerus, menjalar ke rahang, leher, atau lengan, disertai keringat dingin.</p>
+                                </div>
+                                <div class="danger-box">
+                                    <span class="danger-icon">⚠️</span>
+                                    <h4>Penurunan Kesadaran</h4>
+                                    <p>Pasien tampak sangat mengantuk, meracau, mengalami kebingungan akut, atau sangat sulit dibangunkan.</p>
+                                </div>
+                            </div>
+
+                            <h3>Kapan Harus Menjadwalkan Konsultasi dengan Dokter Umum?</h3>
+                            <ul>
+                                <li>Demam berlangsung lebih dari 3 hari berturut-turut tanpa tanda penurunan.</li>
+                                <li>Batuk menetap lebih dari 2–3 minggu (waspadai batuk rejan, asma, atau infeksi saluran napas bawah).</li>
+                                <li>Batuk mengeluarkan dahak bercampur bercak darah segar.</li>
+                                <li>Kondisi memburuk kembali setelah sebelumnya sempat membaik (tanda kemungkinan infeksi bakteri sekunder).</li>
+                            </ul>
+                        </div>
+
+                        <div class="article-footer-note">
+                            📌 <strong>Panggilan Darurat:</strong> Simpan nomor darurat <strong>119</strong> (Layanan Gawat Darurat Medis Indonesia) pada kontak darurat ponsel Anda.
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Bagian Bantuan Tambahan -->
+                <div class="health-cta-banner mt-4">
+                    <div class="cta-content">
+                        <h3>Ingin Memeriksa Keluhan Pernapasan Anda Saat Ini?</h3>
+                        <p>Gunakan kuesioner interaktif kami untuk mendapatkan rangkuman edukatif mengenai gejala batuk, pilek, atau demam yang Anda rasakan.</p>
+                        <a href="symptom-checker.html" class="btn btn-primary">Mulai Deteksi Gejala Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Tentang MedCare -->
+                <div class="footer-section">
+                    <h3>MedCare</h3>
+                    <p>Teman Sehat Anda, Setiap Hari. MedCare adalah prototipe website apotek online yang dikembangkan untuk proyek akademik.</p>
+                </div>
+
+                <!-- Link Navigasi -->
+                <div class="footer-section">
+                    <h3>Navigasi</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="products.html">Katalog Obat</a></li>
+                        <li><a href="symptom-checker.html">Deteksi Gejala</a></li>
+                        <li><a href="health-information.html">Informasi Kesehatan</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="contact.html">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kontak Demo -->
+                <div class="footer-section">
+                    <h3>Kontak Demo</h3>
+                    <p>📧 ahmad.faiz49597@admin.smk.belajar.id</p>
+                    <p>📞 0813-1489-4290</p>
+                    <p>📍 Bogor, Indonesia</p>
+                </div>
+
+                <!-- Disclaimer -->
+                <div class="footer-section">
+                    <h3>Disclaimer</h3>
+                    <p>Website ini adalah proyek akademik dan tidak menjual obat secara nyata. Selalu konsultasikan kebutuhan kesehatan Anda dengan tenaga medis profesional.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 MedCare — Tugas UTS. Tidak untuk penggunaan komersial.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== JAVASCRIPT ===================== -->
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/favorites.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hubungi kami di MedCare. Layanan informasi dan formulir kontak simulasi untuk keperluan prototipe akademik.">
+    <title>Hubungi Kami — MedCare</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- ===================== NAVIGASI ===================== -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="index.html" class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect width="32" height="32" rx="8" fill="#1677C8"/>
+                    <path d="M16 8v16M8 16h16" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                MedCare
+            </a>
+
+            <!-- Menu Navigasi -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="products.html" class="nav-link">Katalog Obat</a></li>
+                <li><a href="symptom-checker.html" class="nav-link">Deteksi Gejala</a></li>
+                <li><a href="health-information.html" class="nav-link">Informasi Kesehatan</a></li>
+                <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+                <li><a href="contact.html" class="nav-link active">Hubungi Kami</a></li>
+            </ul>
+
+            <!-- Ikon Keranjang -->
+            <a href="cart.html" class="nav-cart" aria-label="Keranjang Belanja">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="9" cy="21" r="1"/>
+                    <circle cx="20" cy="21" r="1"/>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                </svg>
+                <span class="cart-badge" id="cart-count">0</span>
+            </a>
+
+            <!-- Tombol Hamburger untuk Mobile -->
+            <button class="hamburger" id="hamburger" aria-label="Menu navigasi">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== KONTEN UTAMA ===================== -->
+    <main>
+        <!-- Header Halaman -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Hubungi Kami</h1>
+                <p>Kirimkan saran, masukan, atau pertanyaan terkait prototipe website MedCare</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="contact-layout-grid">
+                    <!-- Kolom Informasi Kontak Demo -->
+                    <div class="contact-info-panel">
+                        <h2>Informasi Kontak Demo</h2>
+                        <p class="contact-desc">
+                            Untuk keperluan presentasi tugas kuliah dan pengujian antarmuka, informasi kontak di bawah ini disediakan sebagai data percontohan (mockup):
+                        </p>
+
+                        <div class="contact-cards-list">
+                            <div class="contact-item-card">
+                                <span class="contact-icon" aria-hidden="true">📧</span>
+                                <div>
+                                    <h4>Alamat Email Demo</h4>
+                                    <p>demo@medcare.example.com</p>
+                                    <small class="text-muted">Hanya untuk pengujian prototipe</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-item-card">
+                                <span class="contact-icon" aria-hidden="true">📞</span>
+                                <div>
+                                    <h4>Nomor Telepon Demo</h4>
+                                    <p>(021) 555-0123</p>
+                                    <small class="text-muted">Simulasi layanan pelanggan</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-item-card">
+                                <span class="contact-icon" aria-hidden="true">📍</span>
+                                <div>
+                                    <h4>Lokasi Kampus / Proyek</h4>
+                                    <p>DKI Jakarta, Indonesia</p>
+                                    <small class="text-muted">Proyek Semester 3 Pemrograman Web</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-item-card">
+                                <span class="contact-icon" aria-hidden="true">⏰</span>
+                                <div>
+                                    <h4>Jam Operasional Simulasi</h4>
+                                    <p>Senin – Jumat: 08.00 – 17.00 WIB</p>
+                                    <small class="text-muted">Sabtu &amp; Minggu: Libur</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Kotak Informasi Keadaan Darurat -->
+                        <div class="emergency-contact-box mt-3">
+                            <h4>🚨 Butuh Bantuan Medis Darurat Segera?</h4>
+                            <p>Website ini tidak dapat memberikan tindakan medis. Jika Anda mengalami kondisi kegawatdaruratan, segera hubungi:</p>
+                            <p class="emergency-phone-highlight"><strong>119</strong> (Layanan Ambulans Darurat Nasional)</p>
+                        </div>
+                    </div>
+
+                    <!-- Kolom Formulir Kontak -->
+                    <div class="contact-form-panel">
+                        <h2>Kirimkan Pesan Anda</h2>
+                        <p class="form-instruction">
+                            Isi formulir di bawah ini. Validasi input berjalan langsung di sisi peramban (client-side).
+                        </p>
+
+                        <!-- Kotak Notifikasi / Feedback Hasil Submit -->
+                        <div id="form-feedback" class="form-feedback hidden" role="alert"></div>
+
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <!-- Nama Lengkap -->
+                            <div class="form-group">
+                                <label for="contact-name">Nama Lengkap <span class="required-star">*</span></label>
+                                <input type="text" id="contact-name" name="name" class="form-control" placeholder="Contoh: Budi Pratama" required>
+                            </div>
+
+                            <!-- Alamat Email -->
+                            <div class="form-group">
+                                <label for="contact-email">Alamat Email <span class="required-star">*</span></label>
+                                <input type="email" id="contact-email" name="email" class="form-control" placeholder="nama@email.com" required>
+                            </div>
+
+                            <!-- Subjek Pesan -->
+                            <div class="form-group">
+                                <label for="contact-subject">Subjek Pesan <span class="required-star">*</span></label>
+                                <select id="contact-subject" name="subject" class="form-control" required>
+                                    <option value="" disabled selected>Pilih subjek pesan...</option>
+                                    <option value="pertanyaan_umum">Pertanyaan Umum Seputar Prototipe</option>
+                                    <option value="evaluasi_fitur">Masukan Terkait Deteksi Gejala</option>
+                                    <option value="katalog_produk">Pertanyaan Seputar Katalog Obat</option>
+                                    <option value="bug_tampilan">Laporan Bug / Tampilan Antarmuka</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </div>
+
+                            <!-- Pesan -->
+                            <div class="form-group">
+                                <label for="contact-message">Pesan Anda <span class="required-star">*</span></label>
+                                <textarea id="contact-message" name="message" class="form-control" rows="5" placeholder="Tuliskan pesan atau saran Anda secara rinci (minimal 10 karakter)..." required></textarea>
+                            </div>
+
+                            <!-- Tombol Kirim -->
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                    ✉️ Kirim Pesan (Simulasi Front-End)
+                                </button>
+                            </div>
+
+                            <!-- Penafian Privasi Formulir -->
+                            <p class="form-privacy-note text-muted mt-2">
+                                🔒 <strong>Privasi &amp; Keamanan:</strong> Formulir ini berjalan 100% pada peramban Anda tanpa pengiriman data ke server backend atau pihak ketiga mana pun.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Tentang MedCare -->
+                <div class="footer-section">
+                    <h3>MedCare</h3>
+                    <p>Teman Sehat Anda, Setiap Hari. MedCare adalah prototipe website apotek online yang dikembangkan untuk proyek akademik.</p>
+                </div>
+
+                <!-- Link Navigasi -->
+                <div class="footer-section">
+                    <h3>Navigasi</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="products.html">Katalog Obat</a></li>
+                        <li><a href="symptom-checker.html">Deteksi Gejala</a></li>
+                        <li><a href="health-information.html">Informasi Kesehatan</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="contact.html">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kontak Demo -->
+                <div class="footer-section">
+                    <h3>Kontak Demo</h3>
+                    <p>📧 ahmad.faiz49597@admin.smk.belajar.id</p>
+                    <p>📞 0813-1489-4290</p>
+                    <p>📍 Bogor, Indonesia</p>
+                </div>
+
+                <!-- Disclaimer -->
+                <div class="footer-section">
+                    <h3>Disclaimer</h3>
+                    <p>Website ini adalah proyek akademik dan tidak menjual obat secara nyata. Selalu konsultasikan kebutuhan kesehatan Anda dengan tenaga medis profesional.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 MedCare — Tugas UTS. Tidak untuk penggunaan komersial.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== JAVASCRIPT ===================== -->
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/favorites.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

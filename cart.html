@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Keranjang belanja MedCare. Kelola daftar produk kesehatan pilihan Anda sebelum melakukan konfirmasi.">
+    <title>Keranjang Belanja — MedCare</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ===================== NAVIGASI ===================== -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="index.html" class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <rect width="32" height="32" rx="8" fill="#1677C8" />
+                    <path d="M16 8v16M8 16h16" stroke="white" stroke-width="3" stroke-linecap="round" />
+                </svg>
+                MedCare
+            </a>
+
+            <!-- Menu Navigasi -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="products.html" class="nav-link">Katalog Obat</a></li>
+                <li><a href="symptom-checker.html" class="nav-link">Deteksi Gejala</a></li>
+                <li><a href="health-information.html" class="nav-link">Informasi Kesehatan</a></li>
+                <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+                <li><a href="contact.html" class="nav-link">Hubungi Kami</a></li>
+            </ul>
+
+            <!-- Ikon Keranjang -->
+            <a href="cart.html" class="nav-cart active" aria-label="Keranjang Belanja">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="9" cy="21" r="1" />
+                    <circle cx="20" cy="21" r="1" />
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                </svg>
+                <span class="cart-badge" id="cart-count">0</span>
+            </a>
+
+            <!-- Tombol Hamburger untuk Mobile -->
+            <button class="hamburger" id="hamburger" aria-label="Menu navigasi">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== KONTEN UTAMA ===================== -->
+    <main>
+        <!-- Header Halaman -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Keranjang Belanja</h1>
+                <p>Kelola produk yang ingin Anda beli dalam simulasi apotek MedCare</p>
+            </div>
+        </section>
+
+        <!-- Area Keranjang -->
+        <section class="section">
+            <div class="container">
+                <!-- Kontainer Daftar Produk Keranjang (diisi oleh JS) -->
+                <div id="cart-content">
+                    <!-- Produk dalam keranjang akan di-render di sini oleh JavaScript -->
+                </div>
+
+                <!-- Ringkasan Keranjang -->
+                <div id="cart-summary" class="cart-summary hidden">
+                    <div class="cart-total-box">
+                        <span class="total-label">Total Belanja:</span>
+                        <span id="cart-total-price" class="total-price">Rp 0</span>
+                    </div>
+
+                    <div class="cart-actions-row">
+                        <button id="clear-cart-btn" class="btn btn-outline btn-danger">
+                            🗑️ Kosongkan Keranjang
+                        </button>
+                        <a href="products.html" class="btn btn-outline">
+                            ← Lanjut Belanja
+                        </a>
+                        <button class="btn btn-primary"
+                            onclick="showToast('Fitur checkout adalah simulasi. Tidak ada transaksi keuangan nyata pada prototipe akademik ini.', 'warning')">
+                            💳 Proses Pesanan (Simulasi Demo)
+                        </button>
+                    </div>
+
+                    <div class="cart-disclaimer-box">
+                        <p>⚠️ <strong>Catatan Edukasi:</strong> Website ini adalah prototipe proyek akademik frontend.
+                            Seluruh harga, transaksi, dan stok barang bersifat fiktif/simulasi dan tidak melayani
+                            transaksi finansial riil.</p>
+                    </div>
+                </div>
+
+                <!-- State Keranjang Kosong -->
+                <div id="empty-cart" class="empty-state hidden">
+                    <div class="empty-state-icon" aria-hidden="true">🛒</div>
+                    <h2>Keranjang Anda Masih Kosong</h2>
+                    <p>Anda belum menambahkan produk kesehatan apa pun ke dalam keranjang belanja.</p>
+                    <a href="products.html" class="btn btn-primary mt-3">Jelajahi Katalog Obat</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Tentang MedCare -->
+                <div class="footer-section">
+                    <h3>MedCare</h3>
+                    <p>Teman Sehat Anda, Setiap Hari. MedCare adalah prototipe website apotek online yang dikembangkan
+                        untuk proyek akademik.</p>
+                </div>
+
+                <!-- Link Navigasi -->
+                <div class="footer-section">
+                    <h3>Navigasi</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="products.html">Katalog Obat</a></li>
+                        <li><a href="symptom-checker.html">Deteksi Gejala</a></li>
+                        <li><a href="health-information.html">Informasi Kesehatan</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="contact.html">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kontak Demo -->
+                <div class="footer-section">
+                    <h3>Kontak Demo</h3>
+                    <p>📧 ahmad.faiz49597@admin.smk.belajar.id</p>
+                    <p>📞 0813-1489-4290</p>
+                    <p>📍 Bogor, Indonesia</p>
+                </div>
+
+                <!-- Disclaimer -->
+                <div class="footer-section">
+                    <h3>Disclaimer</h3>
+                    <p>Website ini adalah proyek akademik dan tidak menjual obat secara nyata. Selalu konsultasikan
+                        kebutuhan kesehatan Anda dengan tenaga medis profesional.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 MedCare — Tugas UTS. Tidak untuk penggunaan komersial.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== JAVASCRIPT ===================== -->
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/favorites.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
