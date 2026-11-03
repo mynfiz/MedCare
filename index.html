@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MediCare - Informasi produk kesehatan dan pemeriksaan awal gejala pernapasan.">
+  <title>MediCare | Apotek Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="index.html" aria-label="MediCare beranda">
+        <span class="brand-mark">✚</span>
+        <span>Medi<span class="brand-accent">Care</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a class="nav-link active" href="index.html">Beranda</a>
+        <a class="nav-link" href="produk.html">Katalog Obat</a>
+        <a class="nav-link" href="deteksi.html">Cek Gejala</a>
+        <a class="nav-link" href="tentang.html">Tentang Kami</a>
+        <a class="nav-cart" href="keranjang.html">
+          <i data-lucide="shopping-bag"></i>
+          <span>Keranjang</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><i data-lucide="shield-check"></i> Teman sehat setiap hari</span>
+          <h1>Mulai hidup sehat dari <span>langkah sederhana.</span></h1>
+          <p class="hero-description">
+            Temukan informasi produk kesehatan dan kenali gejala pernapasan
+            melalui pemeriksaan awal yang mudah dipahami.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="produk.html">Lihat Katalog <i data-lucide="arrow-right"></i></a>
+            <a class="btn btn-outline" href="deteksi.html"><i data-lucide="stethoscope"></i> Cek Gejala</a>
+          </div>
+          <div class="hero-note">
+            <i data-lucide="info"></i>
+            <span>Informasi pemeriksaan bukan pengganti diagnosis tenaga medis.</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <div class="hero-main-icon"><i data-lucide="heart-pulse"></i></div>
+          <div class="floating-card floating-card-top">
+            <span class="floating-icon mint"><i data-lucide="activity"></i></span>
+            <span><strong>Kenali gejala</strong><small>Lebih awal, lebih waspada</small></span>
+          </div>
+          <div class="floating-card floating-card-bottom">
+            <span class="floating-icon blue"><i data-lucide="package-check"></i></span>
+            <span><strong>Produk kesehatan</strong><small>Informasi dalam satu tempat</small></span>
+          </div>
+          <div class="visual-caption">Your health, our priority.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Layanan MediCare</span>
+          <h2>Apa yang bisa kamu lakukan?</h2>
+          <p>Jelajahi layanan utama yang tersedia di MediCare.</p>
+        </div>
+      </div>
+      <div class="service-grid">
+        <a class="service-card" href="produk.html">
+          <span class="service-icon icon-blue"><i data-lucide="pill"></i></span>
+          <h3>Katalog Obat</h3>
+          <p>Lihat informasi produk kesehatan, kategori, dan detail produk.</p>
+          <span class="text-link">Jelajahi produk <i data-lucide="arrow-up-right"></i></span>
+        </a>
+        <a class="service-card" href="deteksi.html">
+          <span class="service-icon icon-mint"><i data-lucide="stethoscope"></i></span>
+          <h3>Pemeriksaan Gejala</h3>
+          <p>Kenali informasi awal dari gejala pernapasan yang kamu alami.</p>
+          <span class="text-link">Mulai pemeriksaan <i data-lucide="arrow-up-right"></i></span>
+        </a>
+        <a class="service-card" href="riwayat.html">
+          <span class="service-icon icon-purple"><i data-lucide="clipboard-list"></i></span>
+          <h3>Riwayat Aktivitas</h3>
+          <p>Lihat kembali riwayat pesanan dan pemeriksaan di browser ini.</p>
+          <span class="text-link">Lihat riwayat <i data-lucide="arrow-up-right"></i></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container info-banner">
+        <div class="info-banner-icon"><i data-lucide="heart-handshake"></i></div>
+        <div>
+          <span class="eyebrow">Pengingat kesehatan</span>
+          <h2>Jangan abaikan tanda bahaya.</h2>
+          <p>Jika mengalami sesak napas berat, bibir atau wajah kebiruan, atau nyeri dada berat, segera cari pertolongan
+            medis darurat.</p>
+        </div>
+        <a class="btn btn-white" href="deteksi.html">Pelajari lebih lanjut <i data-lucide="arrow-right"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="index.html">
+          <span class="brand-mark"><i data-lucide="heart-pulse"></i></span>
+          <span>Medi<span class="brand-accent">Care</span></span>
+        </a>
+        <p>Teman digital untuk membantu mengenal informasi kesehatan dengan lebih mudah.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <a href="index.html">Beranda</a>
+        <a href="produk.html">Katalog Obat</a>
+        <a href="deteksi.html">Cek Gejala</a>
+        <a href="tentang.html">Tentang Kami</a>
+      </div>
+      <div class="footer-links">
+        <h4>Informasi</h4>
+        <a href="riwayat.html">Riwayat Aktivitas</a>
+        <span>Senin–Sabtu, 08.00–17.00</span>
+        <span>Kontak: (+62) 813-1489-4290</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="currentYear"></span> MediCare. Solusi sehatmu.</span>
+      <span>Informasi bukan pengganti konsultasi medis.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

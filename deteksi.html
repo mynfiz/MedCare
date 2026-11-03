@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemeriksaan Gejala | MediCare</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar container">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">✚</span>
+                <span>Medi<span class="brand-accent">Care</span></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">☰</button>
+
+            <div class="nav-menu" id="navMenu">
+                <a class="nav-link" href="index.html">Beranda</a>
+                <a class="nav-link" href="produk.html">Katalog Obat</a>
+                <a class="nav-link active" href="deteksi.html">Cek Gejala</a>
+                <a class="nav-link" href="tentang.html">Tentang Kami</a>
+                <a class="nav-cart" href="keranjang.html">
+                    Keranjang
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-heading">
+            <div class="container">
+                <span class="eyebrow">Pemeriksaan awal</span>
+                <h1>Kenali Gejala Pernapasan</h1>
+                <p>Pilih gejala yang sedang kamu alami untuk mendapatkan informasi awal.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+
+            <div class="content-card">
+
+                <h2>Pilih Gejala Kamu</h2>
+                <p>Centang gejala yang sedang kamu rasakan.</p>
+
+                <div class="symptom-list">
+
+                    <label class="symptom-item">
+                        <input type="checkbox" name="gejala" value="batuk">
+                        Batuk
+                    </label>
+
+                    <label class="symptom-item">
+                        <input type="checkbox" name="gejala" value="pilek">
+                        Pilek atau hidung tersumbat
+                    </label>
+
+                    <label class="symptom-item">
+                        <input type="checkbox" name="gejala" value="demam">
+                        Demam
+                    </label>
+
+                    <label class="symptom-item">
+                        <input type="checkbox" name="gejala" value="tenggorokan">
+                        Sakit tenggorokan
+                    </label>
+
+                    <label class="symptom-item">
+                        <input type="checkbox" name="gejala" value="sesak">
+                        Sesak napas
+                    </label>
+
+                    <label class="symptom-item">
+                        <input type="checkbox" name="gejala" value="dada">
+                        Nyeri dada
+                    </label>
+
+                </div>
+
+                <button class="btn-primary" onclick="periksaGejala()">
+                    Periksa Gejala
+                </button>
+
+                <div id="hasilPemeriksaan" class="result-box"></div>
+
+            </div>
+
+            <div class="content-card">
+                <h2>Informasi Penting</h2>
+                <p>
+                    Fitur ini hanya memberikan informasi edukatif dan bukan
+                    merupakan diagnosis medis. Jika mengalami sesak napas
+                    atau nyeri dada, segera cari pertolongan medis.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-brand">
+                <a class="brand brand-light" href="index.html">
+                    <span class="brand-mark"><i data-lucide="heart-pulse"></i></span>
+                    <span>Medi<span class="brand-accent">Care</span></span>
+                </a>
+                <p>Teman digital untuk membantu mengenal informasi kesehatan dengan lebih mudah.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigasi</h4>
+                <a href="index.html">Beranda</a>
+                <a href="produk.html">Katalog Obat</a>
+                <a href="deteksi.html">Cek Gejala</a>
+                <a href="tentang.html">Tentang Kami</a>
+            </div>
+            <div class="footer-links">
+                <h4>Informasi</h4>
+                <a href="riwayat.html">Riwayat Aktivitas</a>
+                <span>Senin–Sabtu, 08.00–17.00</span>
+                <span>Kontak: (+62) 813-1489-4290</span>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>© <span id="currentYear"></span> MediCare. Solusi sehatmu.</span>
+            <span>Informasi bukan pengganti konsultasi medis.</span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/detection.js"></script>
+
+</body>
+
+</html>
